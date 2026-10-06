@@ -1,0 +1,4862 @@
+{
+  "info": {
+    "_postman_id": "2d9e5f54-9fe3-43d7-a183-559d250ad238",
+    "name": "CabMe",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "21164954",
+    "_collection_link": "https://go.postman.co/collection/21164954-2d9e5f54-9fe3-43d7-a183-559d250ad238?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Driver",
+      "item": [
+        {
+          "name": "Driver Vehicle Register",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "brand",
+                  "value": "Honda",
+                  "type": "text"
+                },
+                {
+                  "key": "model",
+                  "value": "Verna",
+                  "type": "text"
+                },
+                {
+                  "key": "color",
+                  "value": "White",
+                  "type": "text"
+                },
+                {
+                  "key": "carregistration",
+                  "value": "GJ08 FS8741",
+                  "type": "text"
+                },
+                {
+                  "key": "passenger",
+                  "value": "5",
+                  "type": "text"
+                },
+                {
+                  "key": "id_driver",
+                  "value": "2302",
+                  "type": "text"
+                },
+                {
+                  "key": "id_categorie_vehicle",
+                  "value": "70",
+                  "type": "text"
+                },
+                {
+                  "key": "car_make",
+                  "value": "2020",
+                  "type": "text"
+                },
+                {
+                  "key": "milage",
+                  "value": "22",
+                  "type": "text"
+                },
+                {
+                  "key": "km_driven",
+                  "value": "2000",
+                  "type": "text"
+                },
+                {
+                  "key": "zone_id",
+                  "value": "3",
+                  "type": "text",
+                  "uuid": "b74d4763-c005-4513-b639-d21cb617c3c7"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}vehicle",
+              "host": [
+                "{{base_url}}vehicle"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Owner Vehicle Register",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "brand",
+                  "value": "37",
+                  "type": "text"
+                },
+                {
+                  "key": "model",
+                  "value": "42",
+                  "type": "text"
+                },
+                {
+                  "key": "color",
+                  "value": "Red",
+                  "type": "text"
+                },
+                {
+                  "key": "carregistration",
+                  "value": "GJ08DF1111",
+                  "type": "text"
+                },
+                {
+                  "key": "passenger",
+                  "value": "4",
+                  "type": "text"
+                },
+                {
+                  "key": "owner_id",
+                  "value": "2605",
+                  "type": "text"
+                },
+                {
+                  "key": "id_categorie_vehicle",
+                  "value": "63",
+                  "type": "text"
+                },
+                {
+                  "key": "car_make",
+                  "value": "01-12-2025",
+                  "type": "text"
+                },
+                {
+                  "key": "milage",
+                  "value": "55",
+                  "type": "text"
+                },
+                {
+                  "key": "km_driven",
+                  "value": "55",
+                  "type": "text"
+                },
+                {
+                  "key": "id_vehicle",
+                  "value": "",
+                  "type": "text",
+                  "uuid": "4e676b42-95ce-4d9e-83f4-7665cc52ec7c"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}owner-vehicle-register",
+              "host": [
+                "{{base_url}}owner-vehicle-register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Driver Position",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              },
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_user",
+                  "value": "2260",
+                  "type": "text"
+                },
+                {
+                  "key": "latitude",
+                  "value": "21.235286",
+                  "type": "text"
+                },
+                {
+                  "key": "longitude",
+                  "value": "72.859723",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}update-position",
+              "host": [
+                "{{base_url}}update-position"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Driver Documents",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "document_id",
+                  "value": "2",
+                  "type": "text"
+                },
+                {
+                  "key": "attachment",
+                  "type": "file",
+                  "src": "/C:/Users/HITESHREE/Downloads/first.jfif"
+                },
+                {
+                  "key": "driver_id",
+                  "value": "1016",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}driver-documents-update",
+              "host": [
+                "{{base_url}}driver-documents-update"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Driver Documents",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "driver_id",
+                  "value": "2300",
+                  "type": "text",
+                  "uuid": "4feb5964-9821-4159-bbc2-dbd7a67c1902"
+                },
+                {
+                  "key": "type",
+                  "value": "driver",
+                  "description": "driver,owner",
+                  "type": "text",
+                  "uuid": "57a489bc-2926-44e8-ac76-e75434493f7b"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}driver-documents",
+              "host": [
+                "{{base_url}}driver-documents"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Search Driver Parcel Order",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "driver_id",
+                  "value": "2634",
+                  "type": "text",
+                  "uuid": "6578e2f4-ec8e-4d70-b7e7-ab0368a56aa5"
+                },
+                {
+                  "key": "source_lat",
+                  "value": "23.2217",
+                  "type": "text",
+                  "uuid": "6e01093e-b4f1-4a98-a25e-6b790d389810"
+                },
+                {
+                  "key": "source_lng",
+                  "value": "72.6417",
+                  "type": "text",
+                  "uuid": "0daa309b-1f8f-4c54-aa7a-85f4b569a815"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}search-driver-parcel-order",
+              "host": [
+                "{{base_url}}search-driver-parcel-order"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Search Driver Rental Order",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "driver_id",
+                  "value": "2476",
+                  "type": "text",
+                  "uuid": "6578e2f4-ec8e-4d70-b7e7-ab0368a56aa5"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}search-driver-rental-order",
+              "host": [
+                "{{base_url}}search-driver-rental-order"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Recent Driver Rental Order",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "driver_id",
+                  "value": "2531",
+                  "type": "text",
+                  "uuid": "6578e2f4-ec8e-4d70-b7e7-ab0368a56aa5"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}get-recent-driver-rental-order",
+              "host": [
+                "{{base_url}}get-recent-driver-rental-order"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get onboarding of type driver",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "driver_id",
+                  "value": "70",
+                  "type": "text"
+                },
+                {
+                  "key": "bank_name",
+                  "value": "dena",
+                  "type": "text"
+                },
+                {
+                  "key": "branch_name",
+                  "value": "bhavnagar",
+                  "type": "text"
+                },
+                {
+                  "key": "holder_name",
+                  "value": "abc",
+                  "type": "text"
+                },
+                {
+                  "key": "account_no",
+                  "value": "7687564534",
+                  "type": "text"
+                },
+                {
+                  "key": "information",
+                  "value": "dena info",
+                  "type": "text"
+                },
+                {
+                  "key": "ifsc_code",
+                  "value": "",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}on-boarding?type=Driver",
+              "host": [
+                "{{base_url}}on-boarding"
+              ],
+              "query": [
+                {
+                  "key": "type",
+                  "value": "Driver"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get driver parcel orders",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_driver",
+                  "value": "2634",
+                  "type": "text",
+                  "uuid": "06fc661a-2452-43c2-9915-83822c850245"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}get-driver-parcel-orders",
+              "host": [
+                "{{base_url}}get-driver-parcel-orders"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get bank details",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_driver",
+                  "value": "2191",
+                  "type": "text",
+                  "uuid": "568c4571-c132-4089-8712-6de63aed127d"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}bank-details",
+              "host": [
+                "{{base_url}}bank-details"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add bank details",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_driver",
+                  "value": "2191",
+                  "type": "text"
+                },
+                {
+                  "key": "bank_name",
+                  "value": "WER",
+                  "type": "text"
+                },
+                {
+                  "key": "branch_name",
+                  "value": "RUSIZI Campus",
+                  "type": "text"
+                },
+                {
+                  "key": "holder_name",
+                  "value": "WEQR",
+                  "type": "text"
+                },
+                {
+                  "key": "account_no",
+                  "value": "786756ABN8",
+                  "type": "text"
+                },
+                {
+                  "key": "information",
+                  "value": "WER DETAILS",
+                  "type": "text"
+                },
+                {
+                  "key": "ifsc_code",
+                  "value": "IFSC78675",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}add-bank-details",
+              "host": [
+                "{{base_url}}add-bank-details"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get withdrawals list",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_driver",
+                  "value": "2260",
+                  "type": "text",
+                  "uuid": "5db137e5-f3a6-4762-87b1-06bae5cdb131"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}withdrawals-list",
+              "host": [
+                "{{base_url}}withdrawals-list"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Make withdrawals",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "driver_id",
+                  "value": "2537",
+                  "type": "text"
+                },
+                {
+                  "key": "amount",
+                  "value": "50",
+                  "type": "text"
+                },
+                {
+                  "key": "note",
+                  "value": "",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}withdrawals",
+              "host": [
+                "{{base_url}}withdrawals"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Parcel onride",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_parcel",
+                  "value": "420",
+                  "type": "text"
+                },
+                {
+                  "key": "id_driver",
+                  "value": "2260",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}parcel-onride",
+              "host": [
+                "{{base_url}}parcel-onride"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Rental onride",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_rental",
+                  "value": "6",
+                  "type": "text"
+                },
+                {
+                  "key": "id_driver",
+                  "value": "2260",
+                  "type": "text"
+                },
+                {
+                  "key": "current_km",
+                  "value": "12500",
+                  "type": "text",
+                  "uuid": "58111c33-0935-4750-9829-1f248820b3fd"
+                },
+                {
+                  "key": "otp",
+                  "value": "454631",
+                  "type": "text",
+                  "uuid": "385a9d61-9667-41d5-b2ce-dc0dac4aed65"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}rental-onride",
+              "host": [
+                "{{base_url}}rental-onride"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Parcel confirm",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_parcel",
+                  "value": "466",
+                  "type": "text"
+                },
+                {
+                  "key": "id_driver",
+                  "value": "2456",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}parcel-confirm",
+              "host": [
+                "{{base_url}}parcel-confirm"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Rental confirm",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_rental",
+                  "value": "8",
+                  "type": "text"
+                },
+                {
+                  "key": "id_driver",
+                  "value": "2260",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}rental-confirm",
+              "host": [
+                "{{base_url}}rental-confirm"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Parcel complete",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_parcel",
+                  "value": "466",
+                  "type": "text"
+                },
+                {
+                  "key": "id_driver",
+                  "value": "2456",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}parcel-complete",
+              "host": [
+                "{{base_url}}parcel-complete"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Brand",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}brand",
+              "host": [
+                "{{base_url}}brand"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Model",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "vehicle_type",
+                  "value": "70",
+                  "type": "text"
+                },
+                {
+                  "key": "brand",
+                  "value": "Audi",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}model",
+              "host": [
+                "{{base_url}}model"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Zone",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{base_url}}zone",
+              "host": [
+                "{{base_url}}zone"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Change Status",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_driver",
+                  "value": "1205",
+                  "type": "text"
+                },
+                {
+                  "key": "online",
+                  "value": "yes",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}change-status",
+              "host": [
+                "{{base_url}}change-status"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Change Payment Status",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "booking_id",
+                  "value": "570",
+                  "type": "text"
+                },
+                {
+                  "key": "booking_type",
+                  "value": "ride",
+                  "type": "text",
+                  "description": "ride,parcel,rental"
+                },
+                {
+                  "key": "id_payment",
+                  "value": "9",
+                  "type": "text",
+                  "uuid": "cd933391-d8fb-4018-a970-dcf729ccc9de"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}change-booking-payment-method",
+              "host": [
+                "{{base_url}}change-booking-payment-method"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Driver Vehicle",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{base_url}}vehicle-driver?id_driver=1111",
+              "host": [
+                "{{base_url}}vehicle-driver"
+              ],
+              "query": [
+                {
+                  "key": "id_driver",
+                  "value": "1111"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Owner Vehicle",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "owner_id",
+                  "value": "2196",
+                  "type": "text",
+                  "uuid": "abe97ef8-5b54-431a-b5eb-3ba57d3af4f3"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}get-owner-vehicle",
+              "host": [
+                "{{base_url}}get-owner-vehicle"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Confirm requete",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_ride",
+                  "value": "516",
+                  "type": "text"
+                },
+                {
+                  "key": "id_driver",
+                  "value": "2260",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}confirm-requete",
+              "host": [
+                "{{base_url}}confirm-requete"
+              ],
+              "query": [
+                {
+                  "key": "id_ride",
+                  "value": "34",
+                  "disabled": true
+                },
+                {
+                  "key": "id_user",
+                  "value": "4132",
+                  "disabled": true
+                },
+                {
+                  "key": "driver_name",
+                  "value": "kk",
+                  "disabled": true
+                },
+                {
+                  "key": "from_id",
+                  "value": "25",
+                  "disabled": true
+                },
+                {
+                  "key": "lat_conducteur",
+                  "value": "21",
+                  "disabled": true
+                },
+                {
+                  "key": "lng_conducteur",
+                  "value": "71",
+                  "disabled": true
+                },
+                {
+                  "key": "lat_client",
+                  "value": "22",
+                  "disabled": true
+                },
+                {
+                  "key": "lng_client",
+                  "value": "72",
+                  "disabled": true
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "User Recent Ride",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_user",
+                  "value": "4330",
+                  "type": "text",
+                  "uuid": "4971db99-bd49-47a9-a2ce-fc71fb08069b"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}user-recent-ride",
+              "host": [
+                "{{base_url}}user-recent-ride"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Driver Recent Ride",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_driver",
+                  "value": "2260",
+                  "type": "text",
+                  "uuid": "4971db99-bd49-47a9-a2ce-fc71fb08069b"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}driver-recent-ride",
+              "host": [
+                "{{base_url}}driver-recent-ride"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Onride requete",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_ride",
+                  "value": "445",
+                  "type": "text"
+                },
+                {
+                  "key": "id_driver",
+                  "value": "2260",
+                  "type": "text"
+                },
+                {
+                  "key": "otp",
+                  "value": "752553",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}onride-requete",
+              "host": [
+                "{{base_url}}onride-requete"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Complete requete",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_ride",
+                  "value": "505",
+                  "type": "text"
+                },
+                {
+                  "key": "id_user",
+                  "value": "4330",
+                  "type": "text"
+                },
+                {
+                  "key": "id_driver",
+                  "value": "2260",
+                  "type": "text"
+                },
+                {
+                  "key": "id_payment",
+                  "value": "7",
+                  "type": "text",
+                  "uuid": "694a98b2-69c2-42d8-87db-8cacdb93ac10"
+                },
+                {
+                  "key": "transaction_id",
+                  "value": "14354DSDSDF",
+                  "type": "text",
+                  "uuid": "0c068499-7bff-4357-9275-ef3f027e83e4"
+                },
+                {
+                  "key": "tip",
+                  "value": "0",
+                  "type": "text",
+                  "uuid": "4e6289d2-9508-4e83-b007-b084476a55a9"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}complete-requete",
+              "host": [
+                "{{base_url}}complete-requete"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Rental complete",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_rental",
+                  "value": "8",
+                  "type": "text"
+                },
+                {
+                  "key": "id_user",
+                  "value": "4330",
+                  "type": "text"
+                },
+                {
+                  "key": "id_driver",
+                  "value": "2260",
+                  "type": "text"
+                },
+                {
+                  "key": "id_payment",
+                  "value": "7",
+                  "type": "text",
+                  "uuid": "694a98b2-69c2-42d8-87db-8cacdb93ac10"
+                },
+                {
+                  "key": "transaction_id",
+                  "value": "14354DSDSDF",
+                  "type": "text",
+                  "uuid": "0c068499-7bff-4357-9275-ef3f027e83e4"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}rental-complete",
+              "host": [
+                "{{base_url}}rental-complete"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Rental Set Final KM",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_rental",
+                  "value": "8",
+                  "type": "text"
+                },
+                {
+                  "key": "complete_km",
+                  "value": "2550",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}rental-setfinalkm",
+              "host": [
+                "{{base_url}}rental-setfinalkm"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Requete",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}requete?id_driver=2071",
+              "host": [
+                "{{base_url}}requete"
+              ],
+              "query": [
+                {
+                  "key": "id_driver",
+                  "value": "2071"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Subscription Plans",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              },
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "plan_for",
+                  "value": "owner",
+                  "description": "driver, owner",
+                  "type": "text",
+                  "uuid": "b3d64037-2928-474d-85e1-6435a5ba5c9d"
+                },
+                {
+                  "key": "id_driver",
+                  "value": "2621",
+                  "type": "text",
+                  "uuid": "d71a29b9-ae24-4247-8873-956851196c2d"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}get-subscription-plans",
+              "host": [
+                "{{base_url}}get-subscription-plans"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Set Supscription",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              },
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "planId",
+                  "value": "5",
+                  "type": "text",
+                  "uuid": "eaa20b56-5c4d-4027-84da-523504876991"
+                },
+                {
+                  "key": "driverId",
+                  "value": "2605",
+                  "type": "text",
+                  "uuid": "d4eee382-e10d-4e11-b384-b5d6fbc82262"
+                },
+                {
+                  "key": "id_payment",
+                  "value": "10",
+                  "type": "text",
+                  "uuid": "77893a34-b292-4072-ab4a-1c90470e886b"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}set-subscription",
+              "host": [
+                "{{base_url}}set-subscription"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Subscription History",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              },
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "driverId",
+                  "value": "2537",
+                  "type": "text",
+                  "uuid": "a93a32fc-fa73-4d8f-9fac-2ab230f11bcd"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}get-subscription-history",
+              "host": [
+                "{{base_url}}get-subscription-history"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add Owner Driver",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              },
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_driver",
+                  "value": "",
+                  "type": "text",
+                  "uuid": "49a872e4-9965-46c6-9f74-23dc9eb1d6a8"
+                },
+                {
+                  "key": "firstname",
+                  "value": "THM",
+                  "type": "text",
+                  "uuid": "ebb458be-ab24-4a33-a29d-6cb190eccbdf"
+                },
+                {
+                  "key": "lastname",
+                  "value": "Driver",
+                  "type": "text",
+                  "uuid": "13308f06-c52e-4ab1-a681-d59b5a28b217"
+                },
+                {
+                  "key": "phone",
+                  "value": "1122441122",
+                  "type": "text",
+                  "uuid": "743c3e0f-ecf1-4c00-8ec4-f0bf819cb4a5"
+                },
+                {
+                  "key": "country_code",
+                  "value": "+91",
+                  "type": "text",
+                  "uuid": "629ca74b-852d-4ef1-8cf5-2251900434f1"
+                },
+                {
+                  "key": "email",
+                  "value": "thakarshi.driver@gmail.com",
+                  "type": "text",
+                  "uuid": "e80658dc-3db1-407f-b257-365b2147e172"
+                },
+                {
+                  "key": "password",
+                  "value": "12345678",
+                  "type": "text",
+                  "uuid": "59925094-167e-4a3a-a35c-06264ce5c992"
+                },
+                {
+                  "key": "owner_id",
+                  "value": "2605",
+                  "type": "text",
+                  "uuid": "8d2d277c-062b-48d9-98cc-3a407e5c4f67"
+                },
+                {
+                  "key": "zoneIds",
+                  "value": "3",
+                  "description": "string with comma separate",
+                  "type": "text",
+                  "uuid": "be9f9cb1-55aa-42e2-aaa6-1d6640b66f00"
+                },
+                {
+                  "key": "vehicleId",
+                  "value": "1710",
+                  "type": "text",
+                  "uuid": "f027f0a9-b2d4-49f0-8f77-a464adc4e869"
+                },
+                {
+                  "key": "service_type",
+                  "value": "ride,parcel,rental",
+                  "type": "text",
+                  "uuid": "ce66da2b-c079-4cd1-b91d-59180f2b9f6d"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}add-owner-driver",
+              "host": [
+                "{{base_url}}add-owner-driver"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Owner Driver",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              },
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_driver",
+                  "value": "2302",
+                  "type": "text",
+                  "uuid": "755cc4e0-8af8-4219-bf49-b7c75b5ff6a3"
+                },
+                {
+                  "key": "firstname",
+                  "value": "Dhruv",
+                  "type": "text",
+                  "uuid": "ebb458be-ab24-4a33-a29d-6cb190eccbdf"
+                },
+                {
+                  "key": "lastname",
+                  "value": "Makwana",
+                  "type": "text",
+                  "uuid": "13308f06-c52e-4ab1-a681-d59b5a28b217"
+                },
+                {
+                  "key": "phone",
+                  "value": "+911122441122",
+                  "type": "text",
+                  "uuid": "743c3e0f-ecf1-4c00-8ec4-f0bf819cb4a5"
+                },
+                {
+                  "key": "email",
+                  "value": "thakarshi.driver@gmail.com",
+                  "type": "text",
+                  "uuid": "e80658dc-3db1-407f-b257-365b2147e172"
+                },
+                {
+                  "key": "password",
+                  "value": "",
+                  "type": "text",
+                  "uuid": "59925094-167e-4a3a-a35c-06264ce5c992"
+                },
+                {
+                  "key": "owner_id",
+                  "value": "2301",
+                  "type": "text",
+                  "uuid": "8d2d277c-062b-48d9-98cc-3a407e5c4f67"
+                },
+                {
+                  "key": "zoneIds",
+                  "value": "[3,4]",
+                  "description": "string with comma separate",
+                  "type": "text",
+                  "uuid": "be9f9cb1-55aa-42e2-aaa6-1d6640b66f00"
+                },
+                {
+                  "key": "vehicleId",
+                  "value": "1435",
+                  "type": "text",
+                  "uuid": "f027f0a9-b2d4-49f0-8f77-a464adc4e869"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}update-owner-driver",
+              "host": [
+                "{{base_url}}update-owner-driver"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Owner Driver",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              },
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "owner_id",
+                  "value": "2412",
+                  "type": "text",
+                  "uuid": "c1cfebd3-0a90-4320-9e2c-75587b79e771"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}get-owner-driver",
+              "host": [
+                "{{base_url}}get-owner-driver"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Driver Details",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              },
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_driver",
+                  "value": "2349",
+                  "type": "text",
+                  "uuid": "c1cfebd3-0a90-4320-9e2c-75587b79e771"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}get-driver-details",
+              "host": [
+                "{{base_url}}get-driver-details"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Owner Dashboard",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              },
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "owner_id",
+                  "value": "2529",
+                  "type": "text",
+                  "uuid": "c1cfebd3-0a90-4320-9e2c-75587b79e771"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}get-owner-dashboard",
+              "host": [
+                "{{base_url}}get-owner-dashboard"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Rental Packages",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              },
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "vehicleTypeId",
+                  "value": "",
+                  "type": "text",
+                  "uuid": "b2d32620-07ff-4444-85b8-e9baebe94807"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}get-rental-packages",
+              "host": [
+                "{{base_url}}get-rental-packages"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Remove Driver Vehicle",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              },
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "vehicleId",
+                  "value": "1489",
+                  "type": "text",
+                  "uuid": "dfd2659b-7d84-41d1-b202-17681e21cb78"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}remove-driver-vehicle",
+              "host": [
+                "{{base_url}}remove-driver-vehicle"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Driver Reject Ride",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_ride",
+                  "value": "498",
+                  "type": "text"
+                },
+                {
+                  "key": "id_driver",
+                  "value": "2260",
+                  "type": "text"
+                },
+                {
+                  "key": "reason",
+                  "value": "testing",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}set-rejected-requete",
+              "host": [
+                "{{base_url}}set-rejected-requete"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Driver Reject Rental",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_rental",
+                  "value": "282",
+                  "type": "text"
+                },
+                {
+                  "key": "id_driver",
+                  "value": "2260",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}rental-rejected",
+              "host": [
+                "{{base_url}}rental-rejected"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Owner Driver",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_driver",
+                  "value": "2301",
+                  "type": "text",
+                  "uuid": "893c1cb8-f942-48f1-8eef-b48c57595a1a"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}delete-owner-driver",
+              "host": [
+                "{{base_url}}delete-owner-driver"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Customer",
+      "item": [
+        {
+          "name": "Get onboarding of type customer",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{base_url}}user-delete?user_id=170&user_cat=customer",
+              "host": [
+                "{{base_url}}user-delete"
+              ],
+              "query": [
+                {
+                  "key": "user_id",
+                  "value": "170"
+                },
+                {
+                  "key": "user_cat",
+                  "value": "customer"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update user profile",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_user",
+                  "value": "2605",
+                  "type": "text"
+                },
+                {
+                  "key": "user_type",
+                  "value": "driver",
+                  "description": "driver,customer",
+                  "type": "text",
+                  "uuid": "58be3e43-cd83-40b5-bdbc-99d0206b9239"
+                },
+                {
+                  "key": "phone",
+                  "value": "13241545545",
+                  "type": "text"
+                },
+                {
+                  "key": "country_code",
+                  "value": "+91",
+                  "type": "text",
+                  "uuid": "ffe8c105-83b9-4a48-98d9-4291d024e29d"
+                },
+                {
+                  "key": "email",
+                  "value": "thakarshi.owner@gmail.com",
+                  "type": "text"
+                },
+                {
+                  "key": "mdp",
+                  "value": "12345678",
+                  "type": "text"
+                },
+                {
+                  "key": "image",
+                  "type": "file",
+                  "src": "/C:/Users/Admin/Pictures/default_user2.png"
+                },
+                {
+                  "key": "prenom",
+                  "value": "Thakarshi",
+                  "type": "text"
+                },
+                {
+                  "key": "nom",
+                  "value": "Makwana",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}update-user-profile",
+              "host": [
+                "{{base_url}}update-user-profile"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get user parcel orders",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_user",
+                  "value": "4330",
+                  "type": "text",
+                  "uuid": "a194d626-c0c0-4e6f-8f44-9de124723f87"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}get-user-parcel-orders",
+              "host": [
+                "{{base_url}}get-user-parcel-orders"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get parcel category",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}get-parcel-category",
+              "host": [
+                "{{base_url}}get-parcel-category"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Parcel register",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_user",
+                  "value": "4692",
+                  "type": "text"
+                },
+                {
+                  "key": "lat_source",
+                  "value": "21.17024",
+                  "type": "text"
+                },
+                {
+                  "key": "lng_source",
+                  "value": "72.831062",
+                  "type": "text"
+                },
+                {
+                  "key": "lat_destination",
+                  "value": "21.138120428107207",
+                  "type": "text"
+                },
+                {
+                  "key": "lng_destination",
+                  "value": "72.75209776660158",
+                  "type": "text"
+                },
+                {
+                  "key": "distance",
+                  "value": "9.421100000000001",
+                  "type": "text"
+                },
+                {
+                  "key": "distance_unit",
+                  "value": "KM",
+                  "type": "text"
+                },
+                {
+                  "key": "id_payment",
+                  "value": "9",
+                  "type": "text"
+                },
+                {
+                  "key": "source_adrs",
+                  "value": "Udhana, Udhna Taluka, Surat, Gujarat, 300034, India",
+                  "type": "text"
+                },
+                {
+                  "key": "destination_adrs",
+                  "value": "GIDC, Majura Taluka, Surat, Gujarat, 394230, India",
+                  "type": "text"
+                },
+                {
+                  "key": "sender_name",
+                  "value": "Alex",
+                  "type": "text"
+                },
+                {
+                  "key": "receiver_name",
+                  "value": "Jonson",
+                  "type": "text"
+                },
+                {
+                  "key": "sender_phone",
+                  "value": "7867898770",
+                  "type": "text"
+                },
+                {
+                  "key": "receiver_phone",
+                  "value": "7485145236",
+                  "type": "text"
+                },
+                {
+                  "key": "note",
+                  "value": "Pacel note",
+                  "type": "text"
+                },
+                {
+                  "key": "parcel_weight",
+                  "value": "5",
+                  "type": "text"
+                },
+                {
+                  "key": "parcel_dimension",
+                  "value": "25",
+                  "type": "text"
+                },
+                {
+                  "key": "parcel_image[]",
+                  "type": "file",
+                  "value": null
+                },
+                {
+                  "key": "parcel_type",
+                  "value": "3",
+                  "type": "text"
+                },
+                {
+                  "key": "parcel_date",
+                  "value": "23-Dec-2025",
+                  "type": "text"
+                },
+                {
+                  "key": "parcel_time",
+                  "value": "09:00 AM",
+                  "type": "text"
+                },
+                {
+                  "key": "receive_date",
+                  "value": "25-Dec-2025",
+                  "type": "text"
+                },
+                {
+                  "key": "receive_time",
+                  "value": "09:00 AM",
+                  "type": "text"
+                },
+                {
+                  "key": "amount",
+                  "value": "500",
+                  "type": "text"
+                },
+                {
+                  "key": "discount_id",
+                  "value": "17",
+                  "type": "text",
+                  "uuid": "d192e291-3bad-45ac-ba3f-222e3978022f"
+                },
+                {
+                  "key": "transaction_id",
+                  "value": "DGBSKJDS1455",
+                  "type": "text",
+                  "uuid": "7ae39a56-b05e-47ae-b807-cca08cc09b9f"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}parcel-register",
+              "host": [
+                "{{base_url}}parcel-register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Rental register",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_user",
+                  "value": "4330",
+                  "type": "text"
+                },
+                {
+                  "key": "lat_source",
+                  "value": "21.17024",
+                  "type": "text"
+                },
+                {
+                  "key": "lng_source",
+                  "value": "72.831062",
+                  "type": "text"
+                },
+                {
+                  "key": "depart_name",
+                  "value": "Udhana, Udhna Taluka, Surat, Gujarat, 300034, India",
+                  "type": "text"
+                },
+                {
+                  "key": "id_payment",
+                  "value": "5",
+                  "type": "text"
+                },
+                {
+                  "key": "id_rental_package",
+                  "value": "1",
+                  "type": "text",
+                  "uuid": "ccc72aee-9539-4f0f-82bc-8f47abb1b4f7"
+                },
+                {
+                  "key": "id_vehicle_type",
+                  "value": "63",
+                  "type": "text",
+                  "uuid": "b1d1cd9d-c096-43b7-a9a2-10e1d9b8ff79"
+                },
+                {
+                  "key": "amount",
+                  "value": "500",
+                  "type": "text"
+                },
+                {
+                  "key": "discount_id",
+                  "value": "17",
+                  "type": "text",
+                  "uuid": "d192e291-3bad-45ac-ba3f-222e3978022f"
+                },
+                {
+                  "key": "transaction_id",
+                  "value": "SDSDSDS",
+                  "type": "text",
+                  "uuid": "7ae39a56-b05e-47ae-b807-cca08cc09b9f"
+                },
+                {
+                  "key": "start_date",
+                  "value": "2025-07-31",
+                  "type": "text",
+                  "uuid": "3bc03b20-c058-44d1-a2c7-6ddaa28a76e6"
+                },
+                {
+                  "key": "start_time",
+                  "value": "19:00",
+                  "type": "text",
+                  "uuid": "1c6d5450-f8ca-4361-a3d0-71ed07d3dad2"
+                },
+                {
+                  "key": "end_date",
+                  "value": "2025-08-01",
+                  "type": "text",
+                  "uuid": "735ce057-41b3-4944-b7e9-f1023ba46371"
+                },
+                {
+                  "key": "end_time",
+                  "value": "19:00",
+                  "type": "text",
+                  "uuid": "2e213286-9c64-4a6b-afbc-7db4d5017449"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}rental-register",
+              "host": [
+                "{{base_url}}rental-register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Parcel cancel",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_parcel",
+                  "value": "451",
+                  "type": "text"
+                },
+                {
+                  "key": "id_user",
+                  "value": "4603",
+                  "type": "text"
+                },
+                {
+                  "key": "reason",
+                  "value": "No need",
+                  "type": "text",
+                  "uuid": "16188321-963b-446b-a696-414218bb440a"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}parcel-canceled",
+              "host": [
+                "{{base_url}}parcel-canceled"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Rental cancel",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_rental",
+                  "value": "282",
+                  "type": "text"
+                },
+                {
+                  "key": "id_user",
+                  "value": "4330",
+                  "type": "text"
+                },
+                {
+                  "key": "reason",
+                  "value": "Not valid",
+                  "type": "text",
+                  "uuid": "16188321-963b-446b-a696-414218bb440a"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}rental-canceled",
+              "host": [
+                "{{base_url}}rental-canceled"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get banners",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{base_url}}get-banners",
+              "host": [
+                "{{base_url}}get-banners"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Discount List",
+          "protocolProfileBehavior": {
+            "strictSSL": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "coupon_type",
+                  "value": "Rental",
+                  "description": "Ride, Parcel, Rental",
+                  "type": "text",
+                  "uuid": "2160a8e4-7c3e-43fb-9551-4892e7780d0f"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}discount-list",
+              "host": [
+                "{{base_url}}discount-list"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Referral Code",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}get-referral?id_user=2125",
+              "host": [
+                "{{base_url}}get-referral"
+              ],
+              "query": [
+                {
+                  "key": "id_user",
+                  "value": "2125"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Vehicle Category",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": []
+            },
+            "url": {
+              "raw": "{{base_url}}vehicle-category",
+              "host": [
+                "{{base_url}}vehicle-category"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Vehicle Category with Base Fare",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "latitude_depart",
+                  "value": "23.22329",
+                  "type": "text",
+                  "uuid": "00a1d99a-b4e6-4ec1-9a6f-4f77861560c6"
+                },
+                {
+                  "key": "longitude_depart",
+                  "value": "72.64923",
+                  "type": "text",
+                  "uuid": "59c5cc71-7a70-4c09-8651-1ddb04b575b5"
+                },
+                {
+                  "key": "latitude_arrivee",
+                  "value": "23.16469",
+                  "type": "text",
+                  "uuid": "aefabeb1-c637-4ce9-aca0-d0225d12224f"
+                },
+                {
+                  "key": "longitude_arrivee",
+                  "value": "72.58210",
+                  "type": "text",
+                  "uuid": "b2407bcf-4ae7-4077-bbd1-e63eacfb7698"
+                },
+                {
+                  "key": "distance",
+                  "value": "12.60",
+                  "type": "text",
+                  "uuid": "d653287d-dc5d-4499-b632-01136572d240"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}vehicle-category-basefare",
+              "host": [
+                "{{base_url}}vehicle-category-basefare"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Parcel Category with Base Fare",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "lat_source",
+                  "value": "23.22329",
+                  "type": "text",
+                  "uuid": "00a1d99a-b4e6-4ec1-9a6f-4f77861560c6"
+                },
+                {
+                  "key": "lng_source",
+                  "value": "72.64923",
+                  "type": "text",
+                  "uuid": "59c5cc71-7a70-4c09-8651-1ddb04b575b5"
+                },
+                {
+                  "key": "distance",
+                  "value": "12.60",
+                  "type": "text",
+                  "uuid": "d653287d-dc5d-4499-b632-01136572d240"
+                },
+                {
+                  "key": "parcel_weight",
+                  "value": "2",
+                  "type": "text",
+                  "uuid": "dff5e8ed-ec97-4f6d-a6a6-2d599630de17"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}parcel-category-basefare",
+              "host": [
+                "{{base_url}}parcel-category-basefare"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "SOS Ride Request",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "ride_id",
+                  "value": "544",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}storesos",
+              "host": [
+                "{{base_url}}storesos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Complaint List",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              },
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "booking_id",
+                  "value": "570",
+                  "type": "text",
+                  "uuid": "1bdf2d54-0d51-4223-81a4-9c5f648a4bbc"
+                },
+                {
+                  "key": "booking_type",
+                  "value": "ride",
+                  "description": "ride,parcel,rental",
+                  "type": "text",
+                  "uuid": "e29e6b51-3bcd-4dc2-82a2-c1bc5db0d2ea"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}complaintsList",
+              "host": [
+                "{{base_url}}complaintsList"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Customer Ride Book",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "user_id",
+                  "value": "4697",
+                  "type": "text"
+                },
+                {
+                  "key": "latitude_depart",
+                  "value": "23.187488266633046",
+                  "type": "text"
+                },
+                {
+                  "key": "longitude_depart",
+                  "value": "72.62278839069847",
+                  "type": "text"
+                },
+                {
+                  "key": "latitude_arrivee",
+                  "value": "23.008968363603184",
+                  "type": "text"
+                },
+                {
+                  "key": "longitude_arrivee",
+                  "value": "72.58454524386669",
+                  "type": "text"
+                },
+                {
+                  "key": "depart_name",
+                  "value": "Gandhinagar, Gandhinagar Taluka, Gandhinagar, Gujarat, 382009, India",
+                  "type": "text"
+                },
+                {
+                  "key": "destination_name",
+                  "value": "Gita Mandir, Behrampura, Maninagar Taluka, Ahmedabad, Gujarat, 380022, India",
+                  "type": "text"
+                },
+                {
+                  "key": "duration",
+                  "value": "0h 26m",
+                  "type": "text"
+                },
+                {
+                  "key": "total_people",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "total_children",
+                  "value": "0",
+                  "type": "text",
+                  "uuid": "3c1c3fcd-0fe9-43b6-b774-6c030d0339f0"
+                },
+                {
+                  "key": "stops",
+                  "value": "[]",
+                  "type": "text",
+                  "uuid": "00ebbb9c-f9e9-4aed-8090-e8e52a38d7f7"
+                },
+                {
+                  "key": "distance",
+                  "value": "26.19",
+                  "type": "text",
+                  "uuid": "1fcfb7a7-b4a4-4380-a7ab-0fa7c6a2e687"
+                },
+                {
+                  "key": "distance_unit",
+                  "value": "KM",
+                  "type": "text",
+                  "uuid": "5a21f7e2-c313-462e-bb11-5d63a7450fa7"
+                },
+                {
+                  "key": "sub_total",
+                  "value": "52.38",
+                  "type": "text",
+                  "uuid": "f6f11610-678c-4017-9128-c494f8ce86a0"
+                },
+                {
+                  "key": "id_payment",
+                  "value": "10",
+                  "type": "text",
+                  "uuid": "5b0cfd7a-a541-4f22-a188-75e5f981413c"
+                },
+                {
+                  "key": "vehicle_type_id",
+                  "value": "63",
+                  "type": "text",
+                  "uuid": "fd06b933-efc7-41a6-aa28-afb875bf4ea5"
+                },
+                {
+                  "key": "discount_id",
+                  "value": "null",
+                  "type": "text",
+                  "uuid": "830fa319-ea04-49f3-873b-a390912db230"
+                },
+                {
+                  "key": "surge_multiplier",
+                  "value": "1.0",
+                  "type": "text",
+                  "uuid": "e0abddd0-5417-4f87-9c05-52413fa31a1b"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}ride-book",
+              "host": [
+                "{{base_url}}ride-book"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Customer Reject Ride",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_ride",
+                  "value": "498",
+                  "type": "text"
+                },
+                {
+                  "key": "id_user",
+                  "value": "4330",
+                  "type": "text"
+                },
+                {
+                  "key": "reason",
+                  "value": "testing",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}set-cancelled-requete",
+              "host": [
+                "{{base_url}}set-cancelled-requete"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "User Recent Ride",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_user",
+                  "value": "4365",
+                  "type": "text",
+                  "uuid": "4971db99-bd49-47a9-a2ce-fc71fb08069b"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}user-recent-ride",
+              "host": [
+                "{{base_url}}user-recent-ride"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Ride Increase Fare",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_ride",
+                  "value": "991",
+                  "type": "text",
+                  "uuid": "4971db99-bd49-47a9-a2ce-fc71fb08069b"
+                },
+                {
+                  "key": "id_user",
+                  "value": "4697",
+                  "type": "text",
+                  "uuid": "21d70e2d-0450-4c3b-8fbf-0907bf7ffc44"
+                },
+                {
+                  "key": "new_amount",
+                  "value": "94.31",
+                  "type": "text",
+                  "uuid": "6b7a45c7-6e72-4ce4-8c28-7f12808a82a5"
+                },
+                {
+                  "key": "bump_amount",
+                  "value": "2",
+                  "type": "text",
+                  "uuid": "695e5113-eea9-49b8-8d05-a027cd7bf850"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}ride-increase-fare",
+              "host": [
+                "{{base_url}}ride-increase-fare"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Common",
+      "item": [
+        {
+          "name": "Profile by Phone",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "country_code",
+                  "value": "+91",
+                  "type": "text",
+                  "uuid": "b623c691-d8c6-4bce-bc2d-e55e37aac37e"
+                },
+                {
+                  "key": "phone",
+                  "value": "6355233753",
+                  "type": "text"
+                },
+                {
+                  "key": "user_cat",
+                  "value": "driver",
+                  "type": "text"
+                },
+                {
+                  "key": "login_type",
+                  "value": "phoneNumber",
+                  "type": "text",
+                  "uuid": "f142d31b-1741-49c7-9065-fd0bae0a665d"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}profilebyphone",
+              "host": [
+                "{{base_url}}profilebyphone"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get fcm token",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_user",
+                  "value": "4132",
+                  "type": "text"
+                },
+                {
+                  "key": "cat_user",
+                  "value": "user_app",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}fcm-token",
+              "host": [
+                "{{base_url}}fcm-token"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "User Registration",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "firstname",
+                  "value": "Mayank",
+                  "type": "text"
+                },
+                {
+                  "key": "lastname",
+                  "value": "Modi",
+                  "type": "text",
+                  "uuid": "66bf8089-a6c0-4a9c-a4f6-85e38042d6dd"
+                },
+                {
+                  "key": "phone",
+                  "value": "8511345401",
+                  "type": "text"
+                },
+                {
+                  "key": "country_code",
+                  "value": "+91",
+                  "type": "text",
+                  "uuid": "772fc1cb-7325-4d60-9796-ab9cdbcca981"
+                },
+                {
+                  "key": "email",
+                  "value": "tomayankmodi1995@gmail.com",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "123456",
+                  "type": "text"
+                },
+                {
+                  "key": "login_type",
+                  "value": "phoneNumber",
+                  "type": "text"
+                },
+                {
+                  "key": "tonotify",
+                  "value": "yes",
+                  "type": "text"
+                },
+                {
+                  "key": "account_type",
+                  "value": "customer",
+                  "type": "text"
+                },
+                {
+                  "key": "service_type",
+                  "value": "ride,parcel,rental",
+                  "description": "ride,parcel,rental",
+                  "type": "text",
+                  "uuid": "44dd812c-5001-4bd9-8078-1d9e1eb950c6",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}user",
+              "host": [
+                "{{base_url}}user"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update user mdp",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_user",
+                  "value": "2260",
+                  "type": "text"
+                },
+                {
+                  "key": "anc_mdp",
+                  "value": "2121321",
+                  "type": "text"
+                },
+                {
+                  "key": "new_mdp",
+                  "value": "123456",
+                  "type": "text"
+                },
+                {
+                  "key": "user_cat",
+                  "value": "driver",
+                  "type": "text",
+                  "description": "user_app, driver"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}update-user-mdp",
+              "host": [
+                "{{base_url}}update-user-mdp"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "User Login",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "email",
+                  "value": "thakarshi.driver@gmail.com",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "12345678",
+                  "type": "text"
+                },
+                {
+                  "key": "user_cat",
+                  "value": "driver",
+                  "description": "customer,driver,owner",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}user-login",
+              "host": [
+                "{{base_url}}user-login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "User Logout",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "user_id",
+                  "value": "4603",
+                  "type": "text"
+                },
+                {
+                  "key": "user_cat",
+                  "value": "customer",
+                  "description": "customer,driver,owner",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}logout",
+              "host": [
+                "{{base_url}}logout"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add Amount",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "user_id",
+                  "value": "4330",
+                  "type": "text"
+                },
+                {
+                  "key": "user_type",
+                  "value": "customer",
+                  "type": "text"
+                },
+                {
+                  "key": "amount",
+                  "value": "200",
+                  "type": "text"
+                },
+                {
+                  "key": "payment_method",
+                  "value": "Wallet",
+                  "type": "text"
+                },
+                {
+                  "key": "is_credited",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "booking_id",
+                  "value": "",
+                  "type": "text",
+                  "uuid": "20e35863-e01c-4877-acc1-d31e126e8a07"
+                },
+                {
+                  "key": "booking_type",
+                  "value": "",
+                  "description": "ride/parcel/rental",
+                  "type": "text",
+                  "uuid": "7b7dea4f-63ac-4030-a7d8-7d7083b5af46"
+                },
+                {
+                  "key": "note",
+                  "value": "wallet balance credit",
+                  "type": "text",
+                  "uuid": "654b6d1a-53ba-4f3c-8edf-ab18d552d684"
+                },
+                {
+                  "key": "transaction_id",
+                  "value": "342342342342",
+                  "type": "text",
+                  "uuid": "f2f3e3e2-c317-4685-a19c-53567e6c643d"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}amount",
+              "host": [
+                "{{base_url}}amount"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Submit Review",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "user_id",
+                  "value": "4330",
+                  "type": "text"
+                },
+                {
+                  "key": "driver_id",
+                  "value": "2260",
+                  "type": "text",
+                  "uuid": "6abb1944-62c7-485d-9c34-641a965f1ae1"
+                },
+                {
+                  "key": "review_from",
+                  "value": "driver",
+                  "type": "text",
+                  "description": "customer,driver"
+                },
+                {
+                  "key": "review_to",
+                  "value": "customer",
+                  "description": "customer,driver",
+                  "type": "text",
+                  "uuid": "f5e7f78b-1e0d-4370-9137-b6cc35de18fb"
+                },
+                {
+                  "key": "comment",
+                  "value": "sorry for inconvenience",
+                  "type": "text"
+                },
+                {
+                  "key": "rating",
+                  "value": "5",
+                  "type": "text"
+                },
+                {
+                  "key": "booking_id",
+                  "value": "512",
+                  "type": "text",
+                  "uuid": "20e35863-e01c-4877-acc1-d31e126e8a07"
+                },
+                {
+                  "key": "booking_type",
+                  "value": "ride",
+                  "description": "ride/parcel/rental",
+                  "type": "text",
+                  "uuid": "7b7dea4f-63ac-4030-a7d8-7d7083b5af46"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}submit-review",
+              "host": [
+                "{{base_url}}submit-review"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Review",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "booking_id",
+                  "value": "549",
+                  "type": "text",
+                  "uuid": "20e35863-e01c-4877-acc1-d31e126e8a07"
+                },
+                {
+                  "key": "booking_type",
+                  "value": "ride",
+                  "description": "ride,parcel,rental",
+                  "type": "text",
+                  "uuid": "8836f21f-b2af-4040-bc54-4757dd96e66d"
+                },
+                {
+                  "key": "review_from",
+                  "value": "driver",
+                  "type": "text",
+                  "uuid": "98a393f6-5bff-40e6-bcd2-d2a55b62c320"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}get-review",
+              "host": [
+                "{{base_url}}get-review"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Fcm",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "user_id",
+                  "value": "15",
+                  "type": "text"
+                },
+                {
+                  "key": "user_cat",
+                  "value": "user_app",
+                  "type": "text"
+                },
+                {
+                  "key": "fcm_id",
+                  "value": "yterwtyertyrvyrywerqw",
+                  "type": "text",
+                  "uuid": "51112a5a-acf1-4721-946d-09fc2a7c3e72"
+                },
+                {
+                  "key": "device_id",
+                  "value": "4637d12a3260a6c2",
+                  "type": "text",
+                  "uuid": "de7ff3ff-bb15-4b76-869a-82431ccdd657"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}update-fcm",
+              "host": [
+                "{{base_url}}update-fcm"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Existing User(user already exists or not)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              },
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "email",
+                  "value": "Menil.sidhiinfosoft@gmail.com",
+                  "type": "text"
+                },
+                {
+                  "key": "user_cat",
+                  "value": "customer",
+                  "type": "text",
+                  "description": "customer, driver"
+                },
+                {
+                  "key": "login_type",
+                  "value": "google",
+                  "type": "text",
+                  "uuid": "4bcdfd87-4e1a-475b-aa5d-9ba37a9067a5"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}existing-user",
+              "host": [
+                "{{base_url}}existing-user"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete user",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "user_id",
+                  "value": "2511",
+                  "type": "text",
+                  "uuid": "893c1cb8-f942-48f1-8eef-b48c57595a1a"
+                },
+                {
+                  "key": "user_cat",
+                  "value": "driver",
+                  "description": "customer,driver",
+                  "type": "text",
+                  "uuid": "28e34c29-e3a5-441e-839c-a64550561e9e"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}user-delete",
+              "host": [
+                "{{base_url}}user-delete"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Settings",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}settings",
+              "host": [
+                "{{base_url}}settings"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Service Json",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}get-service-json",
+              "host": [
+                "{{base_url}}get-service-json"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Send otp for reset password",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "email",
+                  "value": "thakarshi@siddhiinfosoft.com",
+                  "type": "text"
+                },
+                {
+                  "key": "user_cat",
+                  "value": "driver",
+                  "type": "text",
+                  "description": "user_app, driver"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}reset-password-otp",
+              "host": [
+                "{{base_url}}reset-password-otp"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Reset Password",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "email",
+                  "value": "jonsonuber@yopmail.com",
+                  "type": "text"
+                },
+                {
+                  "key": "user_cat",
+                  "value": "driver",
+                  "type": "text"
+                },
+                {
+                  "key": "otp",
+                  "value": "1534",
+                  "type": "text",
+                  "uuid": "80e2c482-10e6-4e4f-bfa7-30ce6864eaca"
+                },
+                {
+                  "key": "new_password",
+                  "value": "123456",
+                  "type": "text",
+                  "uuid": "d36b0d17-dfb8-4f35-8c01-3223659fabab"
+                },
+                {
+                  "key": "confirm_password",
+                  "value": "123456",
+                  "type": "text",
+                  "uuid": "314f7b3e-1aae-4712-878e-b7e382628d01"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}reset-password",
+              "host": [
+                "{{base_url}}reset-password"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Languages",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}language",
+              "host": [
+                "{{base_url}}language"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Privacy Policy",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}privacy-policy",
+              "host": [
+                "{{base_url}}privacy-policy"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Term and Condition",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}terms-of-condition",
+              "host": [
+                "{{base_url}}terms-of-condition"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get parcel detail",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_parcel",
+                  "value": "401",
+                  "type": "text",
+                  "uuid": "97d61c4f-d2c8-4691-be7e-f01512ad13a4"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}get-parcel-detail",
+              "host": [
+                "{{base_url}}get-parcel-detail"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Ridelist",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "mdp",
+                  "value": "123456",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "email",
+                  "value": "menil@yopmail.com",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "user_cat",
+                  "value": "customer",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}requete?id_driver=1151",
+              "host": [
+                "{{base_url}}requete"
+              ],
+              "query": [
+                {
+                  "key": "apikey",
+                  "value": "base64:9wMwQDEBjAK5OVvehRlQhF5PE1dNk6xK3RRIUkcDyGA=",
+                  "disabled": true
+                },
+                {
+                  "key": "id_driver",
+                  "value": "1151"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add Complaint",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "value": "Seating",
+                  "type": "text"
+                },
+                {
+                  "key": "description",
+                  "value": "Seting not proper",
+                  "type": "text"
+                },
+                {
+                  "key": "booking_type",
+                  "value": "rental",
+                  "type": "text",
+                  "description": "ride,parcel,rental"
+                },
+                {
+                  "key": "booking_id",
+                  "value": "8",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}complaints",
+              "host": [
+                "{{base_url}}complaints"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get driver",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}driver?lat1=21&lng1=72&type_vehicle=63",
+              "host": [
+                "{{base_url}}driver"
+              ],
+              "query": [
+                {
+                  "key": "lat1",
+                  "value": "21"
+                },
+                {
+                  "key": "lng1",
+                  "value": "72"
+                },
+                {
+                  "key": "type_vehicle",
+                  "value": "63"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Wallet History",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "user_id",
+                  "value": "4603",
+                  "type": "text",
+                  "uuid": "0b5dd06d-2ce0-43f1-bbb4-8bda4e0f96c0"
+                },
+                {
+                  "key": "user_type",
+                  "value": "customer",
+                  "type": "text",
+                  "uuid": "f3ac4d74-1ab8-4633-828a-0a453baca9cb"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}get-wallet-history",
+              "host": [
+                "{{base_url}}get-wallet-history"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Payment Settings",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}payment-settings",
+              "host": [
+                "{{base_url}}payment-settings"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Booking Details",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_ride",
+                  "value": "1024",
+                  "type": "text",
+                  "uuid": "4971db99-bd49-47a9-a2ce-fc71fb08069b"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}get-booking-details",
+              "host": [
+                "{{base_url}}get-booking-details"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Rental Booking Details",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_rental",
+                  "value": "44",
+                  "type": "text",
+                  "uuid": "4971db99-bd49-47a9-a2ce-fc71fb08069b"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}get-rental-booking-details",
+              "host": [
+                "{{base_url}}get-rental-booking-details"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Booking List",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "accesstoken",
+                "value": "{{accesstoken}}",
+                "type": "text"
+              },
+              {
+                "key": "apikey",
+                "value": "{{apikey}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "user_id",
+                  "value": "2579",
+                  "type": "text",
+                  "uuid": "4971db99-bd49-47a9-a2ce-fc71fb08069b"
+                },
+                {
+                  "key": "user_type",
+                  "value": "driver",
+                  "type": "text",
+                  "uuid": "adda7736-369d-4955-b346-52f7135a4fd5"
+                },
+                {
+                  "key": "booking_type",
+                  "value": "rental",
+                  "type": "text",
+                  "uuid": "6a853217-939a-436c-9a3e-2fb012e901eb"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}get-booking-list",
+              "host": [
+                "{{base_url}}get-booking-list"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
